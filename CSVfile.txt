@@ -106,6 +106,7 @@ if 'Gender' in df.columns:
     print("\n Gender Distribution :")
     print(df['Gender'].value_counts())
 print("\n Data Analysis Completed Successfully!")
+# Create a csv file in excel with name age salary gender (4)
 
 11.Perform data visualization using Python on any sales data.
 Code:
@@ -158,7 +159,7 @@ plt.title('Sales Amount vs Units Sold')
 plt.xlabel('Units Sold')
 plt.ylabel('Sales Amount')
 plt.show()
-
+#pip install Pandas,Numphy matplotlib, seaborn
 
 
 5.Apply the What-If analysis for data visualization design & generate yearly report from the data where have data use Excel.
@@ -381,3 +382,4 @@ INSERT INTO SalesData VALUES
 (5,'Mobile','North',35000,2024);
 
 SELECT * FROM SalesData;
+
