@@ -2,7 +2,7 @@
 BI Practical
 
 
-1.Implementation of classification algorithm in R programming.Consider the annual rainfall details start from 2012.
+```1.Implementation of classification algorithm in R programming.Consider the annual rainfall details start from 2012.```
 Code:
 rainfall <- c(799,1174.8,865.1,1334.6,635.4,918.5,685.5,998.6,784.2,985,882.8,1071)
 rainfall.timeseries <- ts(rainfall,start=c(2012,1),frequency=12)
@@ -13,7 +13,7 @@ dev.off()
 	
 
 
-2.Implementation of decision tree using R tool.
+```2.Implementation of decision tree using R tool.```
 code:
 library(party)
 input.dat <- readingskills[1:105, ]
@@ -25,7 +25,7 @@ output.tree <- ctree(
 plot(output.tree)
 dev.off()
 
-3.Data analysis using Time Series analysis
+```3.Data analysis using Time Series analysis```
 Code:
 rainfall <- c(799,1174.8,865.1,1334.6,635.4,918.5,685.5,998.6,784.2,985,882.8,1071)
 rainfall.timeseries <- ts(rainfall,start=c(2012,1),frequency=12)
@@ -34,7 +34,7 @@ png(file="rainfall.png")
 plot(rainfall.timeseries)
 dev.off()
 
-4.Performing data clustering using clustering algorithm using R (K-mean Clustering).
+```4.Performing data clustering using clustering algorithm using R (K-mean Clustering).```
 Code:
 newiris <- iris
 newiris$Species <- NULL
@@ -48,7 +48,7 @@ points(KC$centers[, c("Sepal.Length", "Sepal.Width")],
        col = 1:3, pch = 8, cex = 2)
 dev.off()
 
-6.Linear regression using R.
+```6.Linear regression using R.```
 code:
 x <- c(151, 174, 138, 186, 128, 136, 176, 163, 152, 131)
 y <- c(63, 81, 56, 91, 47, 57, 76, 72, 62, 48)
@@ -69,7 +69,7 @@ plot(x, y,
      ylab = "Height in cm")
 dev.off()
 
-9.Write Python program to read data from CSV file.
+```9.Write Python program to read data from CSV file.```
 Code:
 library(caTools)
 quality <- read.csv("C:/Users/Students/Downloads/quality.csv")
@@ -83,7 +83,7 @@ nrow(qualityTrain)
 QualityLog <- glm(PoorCare ~ OfficeVisit + Narcotics, data = qualityTrain, family = "binomial")
 summary(QualityLog)
 
-10.write Python Program to Read data from a CSV file. Perform simple Data analysis and generate basic insight
+```10.write Python Program to Read data from a CSV file. Perform simple Data analysis and generate basic insight```
 Code:
 import pandas as pd
 file_path = "Book1.csv"
@@ -108,7 +108,7 @@ if 'Gender' in df.columns:
     print(df['Gender'].value_counts())
 print("\n Data Analysis Completed Successfully!")
 
-11.Perform data visualization using Python on any sales data.
+```11.Perform data visualization using Python on any sales data.```
 Code:
 import pandas as pd
 import numpy as np
