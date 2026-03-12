@@ -348,4 +348,36 @@ Rename columns
 Step 8
 After cleaning the data, click Close & Load.
 Step 9
+
 The cleaned sales data will be loaded into Excel sheet.
+
+
+
+
+
+
+
+
+
+
+
+CREATE DATABASE SalesDW;
+
+USE SalesDW;
+
+CREATE TABLE SalesData (
+ID INT,
+Product VARCHAR(50),
+Region VARCHAR(50),
+Sales INT,
+Year INT
+);
+
+INSERT INTO SalesData VALUES
+(1,'Laptop','North',50000,2022),
+(2,'Mobile','South',30000,2022),
+(3,'Tablet','East',20000,2023),
+(4,'Laptop','West',60000,2023),
+(5,'Mobile','North',35000,2024);
+
+SELECT * FROM SalesData;
